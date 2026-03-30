@@ -93,6 +93,33 @@ public class WhenHandlingRecruitIndexerJob
             azureSearchHelper.Verify(x => x.UpdateAlias(Constants.AliasName, expectedIndexName), Times.Once);
         }
     }
+    
+    
+    [Test, MoqAutoData]
+    public void Then_If_Error_With_The_LiveVacancies_Index_Alias_Is_Not_Updated(
+        LiveVacancy vacancy,
+        List<LiveVacancy> liveVacancies,
+        List<NhsVacancy> nhsLiveVacancies,
+        List<CsjVacancy> civilServiceLiveVacancies,
+        [Frozen] Mock<IFindApprenticeshipJobsService> findApprenticeshipJobsService,
+        [Frozen] Mock<IAzureSearchHelper> azureSearchHelper,
+        [Frozen] Mock<IDateTimeService> dateTimeService,
+        DateTime currentDateTime,
+        RecruitIndexerJobHandler sut)
+    {
+        dateTimeService.Setup(x => x.GetCurrentDateTime()).Returns(currentDateTime);
+        var expectedIndexName = $"{Constants.IndexPrefix}{currentDateTime.ToString(Constants.IndexDateSuffixFormat)}";
+
+        findApprenticeshipJobsService.Setup(x => x.GetLiveVacancies(It.IsAny<int>(), 500, null)).ThrowsAsync(new Exception("Errors"));
+        
+        Assert.ThrowsAsync<Exception>(async() => await sut.Handle());
+
+        using (new AssertionScope())
+        {
+            azureSearchHelper.Verify(x => x.CreateIndex(expectedIndexName), Times.Once());
+            azureSearchHelper.Verify(x => x.UpdateAlias(Constants.AliasName, expectedIndexName), Times.Never);
+        }
+    }
 
     [Test, MoqAutoData]
     public async Task Then_LiveVacancies_Is_Null_And_Index_Is_Not_Created(

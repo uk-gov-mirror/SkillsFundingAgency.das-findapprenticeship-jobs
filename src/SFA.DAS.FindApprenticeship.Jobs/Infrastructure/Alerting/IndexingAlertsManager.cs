@@ -10,6 +10,7 @@ public interface IIndexingAlertsManager
     Task SendNhsApiAlertAsync(CancellationToken cancellationToken = default);
     Task SendNhsImportAlertAsync(CancellationToken cancellationToken = default);
     Task SendCsjImportAlertAsync(CancellationToken cancellationToken = default);
+    Task SendFaaImportAlertAsync(CancellationToken cancellationToken = default);
 }
 
 public class IndexingAlertsManager(
@@ -22,6 +23,7 @@ public class IndexingAlertsManager(
     private static string Now => DateTime.UtcNow.ToString("d/M/yyyy @ HH:mm:ss");
     private AlertMessage Alert(string message) => new(Origin, environment.EnvironmentName, message, Now);
 
+    private AlertMessage ProblemReturningFaaData => Alert("The FAA API returned an error");
     private AlertMessage IndexEmptyMessage => Alert("The index contains no documents");
     private AlertMessage NoNhsVacanciesImported => Alert("No NHS vacancies were imported");
     private AlertMessage NoNhsVacanciesReturned => Alert("The external NHS API returned no vacancies");
@@ -57,6 +59,11 @@ public class IndexingAlertsManager(
     public async Task SendCsjImportAlertAsync(CancellationToken cancellationToken = default)
     {
         await SendAlertAsync(NoCivilServiceVacanciesReturned, cancellationToken);
+    }
+    
+    public async Task SendFaaImportAlertAsync(CancellationToken cancellationToken = default)
+    {
+        await SendAlertAsync(ProblemReturningFaaData, cancellationToken);
     }
 
     private async Task SendAlertAsync(AlertMessage alertMessage, CancellationToken cancellationToken = default)
