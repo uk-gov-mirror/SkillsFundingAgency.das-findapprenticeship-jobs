@@ -1,5 +1,5 @@
 using System.Net;
-using AutoFixture.NUnit3;
+using AutoFixture.NUnit4;
 using Moq;
 using NUnit.Framework;
 using SFA.DAS.FindApprenticeship.Jobs.Application.Services;

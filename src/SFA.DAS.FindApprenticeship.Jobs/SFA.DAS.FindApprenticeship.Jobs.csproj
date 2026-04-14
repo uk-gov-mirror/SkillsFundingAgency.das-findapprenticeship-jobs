@@ -1,6 +1,6 @@
 <Project Sdk="Microsoft.NET.Sdk">
 	<PropertyGroup>
-		<TargetFramework>net8.0</TargetFramework>
+		<TargetFramework>net10.0</TargetFramework>
 		<AzureFunctionsVersion>V4</AzureFunctionsVersion>
 		<OutputType>Exe</OutputType>
 		<ImplicitUsings>enable</ImplicitUsings>
@@ -13,8 +13,8 @@
 	
 	<ItemGroup>
 		<FrameworkReference Include="Microsoft.AspNetCore.App" />
-		<PackageReference Include="Azure.Identity" Version="1.17.1" />
-		<PackageReference Include="Azure.Security.KeyVault.Secrets" Version="4.8.0" />
+		<PackageReference Include="Azure.Identity" Version="1.21.0" />
+		<PackageReference Include="Azure.Security.KeyVault.Secrets" Version="4.9.0" />
 		<PackageReference Include="Microsoft.Azure.Functions.Worker.Extensions.Timer" Version="4.3.1" />
 		<PackageReference Include="Microsoft.Azure.Functions.Worker" Version="2.1.0" />
 		<PackageReference Include="Microsoft.Azure.Functions.Worker.Sdk" Version="2.0.7" />
@@ -22,36 +22,36 @@
 		<PackageReference Include="Microsoft.Azure.Functions.Worker.Extensions.Storage.Queues" Version="5.5.3" />
 		<PackageReference Include="Microsoft.Azure.Functions.Worker.Extensions.Http.AspNetCore" Version="2.1.0" />
 		<PackageReference Include="Microsoft.Azure.Functions.Worker.Extensions.Http" Version="3.3.0" />
-		<PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="8.0.2" />
-		<PackageReference Include="Microsoft.Extensions.Logging" Version="8.0.1" />
-		<PackageReference Include="Microsoft.IdentityModel.JsonWebTokens" Version="8.14.0" />
-		<PackageReference Include="Microsoft.Extensions.Options" Version="8.0.2" />
-		<PackageReference Include="Azure.Search.Documents" Version="11.7.0-beta.1" />
+		<PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="10.0.5" />
+		<PackageReference Include="Microsoft.Extensions.Logging" Version="10.0.5" />
+		<PackageReference Include="Microsoft.IdentityModel.JsonWebTokens" Version="8.17.0" />
+		<PackageReference Include="Microsoft.Extensions.Options" Version="10.0.5" />
+		<PackageReference Include="Azure.Search.Documents" Version="11.8.0-beta.1" />
 		<PackageReference Include="Microsoft.Azure.Core.Spatial" Version="1.1.0" />
 		<PackageReference Include="Microsoft.Azure.Core.Spatial.NewtonsoftJson" Version="1.0.0" />
 		<PackageReference Include="Newtonsoft.Json" Version="13.0.4" />
-		<PackageReference Include="SFA.DAS.Common.Domain" Version="1.4.303" />
-		<PackageReference Include="SFA.DAS.Configuration.AzureTableStorage" Version="17.1.138" />
+		<PackageReference Include="SFA.DAS.Common.Domain" Version="1.4.308" />
+		<PackageReference Include="SFA.DAS.Configuration.AzureTableStorage" Version="17.1.165" />
 		<PackageReference Include="Microsoft.ApplicationInsights.WorkerService" Version="2.23.0" />
 		<PackageReference Include="Microsoft.Azure.Functions.Worker.ApplicationInsights" Version="2.0.0" />
-		<PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="8.0.1" />
-		<PackageReference Include="Microsoft.Extensions.Http" Version="8.0.1" />
-		<PackageReference Include="Microsoft.Extensions.Http.Polly" Version="8.0.21" />
-		<PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="8.0.3" />
+		<PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="10.0.5" />
+		<PackageReference Include="Microsoft.Extensions.Http" Version="10.0.5" />
+		<PackageReference Include="Microsoft.Extensions.Http.Polly" Version="10.0.5" />
+		<PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="10.0.5" />
 		<PackageReference Include="NServiceBus" Version="9.2.6" />
 		<PackageReference Include="NServiceBus.AzureFunctions.Worker.ServiceBus" Version="5.2.0" />
 		<PackageReference Include="NServiceBus.Extensions.Hosting" Version="3.0.1" />
 		<PackageReference Include="NServiceBus.Newtonsoft.Json" Version="4.1.0" />
-		<PackageReference Include="SFA.DAS.Api.Common" Version="17.1.159" />
-		<PackageReference Include="SFA.DAS.Encoding" Version="1.1.76" />
-		<PackageReference Include="System.Drawing.Common" Version="8.0.21" />
-		<PackageReference Include="System.Formats.Asn1" Version="8.0.2" />
-		<PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="8.14.0" />
+		<PackageReference Include="SFA.DAS.Api.Common" Version="17.1.165" />
+		<PackageReference Include="SFA.DAS.Encoding" Version="1.1.93" />
+		<PackageReference Include="System.Drawing.Common" Version="10.0.5" />
+		<PackageReference Include="System.Formats.Asn1" Version="10.0.5" />
+		<PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="8.17.0" />
 		<PackageReference Include="System.Net.Http" Version="4.3.4" />
-		<PackageReference Include="System.Security.Cryptography.Pkcs" Version="8.0.1" />
-		<PackageReference Include="System.Security.Cryptography.Xml" Version="8.0.2" />
-		<PackageReference Include="System.Text.Encodings.Web" Version="8.0.0" />
-		<PackageReference Include="System.Text.Json" Version="8.0.6" />
+		<PackageReference Include="System.Security.Cryptography.Pkcs" Version="10.0.5" />
+		<PackageReference Include="System.Security.Cryptography.Xml" Version="10.0.5" />
+		<PackageReference Include="System.Text.Encodings.Web" Version="10.0.5" />
+		<PackageReference Include="System.Text.Json" Version="10.0.5" />
 		<PackageReference Include="System.Text.RegularExpressions" Version="4.3.1" />
 	</ItemGroup>
 	<ItemGroup>
