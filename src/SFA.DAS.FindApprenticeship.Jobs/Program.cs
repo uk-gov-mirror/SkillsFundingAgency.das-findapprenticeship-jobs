@@ -83,7 +83,7 @@ var host = new HostBuilder()
         services.AddTransient<IIndexCleanupJobHandler, IndexCleanupJobHandler>();
         services.AddTransient<IVacancyUpdatedHandler, VacancyUpdatedHandler>();
         services.AddTransient<IVacancyClosedHandler, VacancyClosedHandler>();
-        services.AddTransient<IVacancyApprovedHandler, VacancyApprovedHandler>();
+        services.AddTransient<IVacancyLiveHandler, VacancyLiveHandler>();
         services.AddTransient<IVacancyClosingSoonHandler, VacancyClosingSoonHandler>();
         services.AddTransient<ISendApplicationReminderHandler, SendApplicationReminderHandler>();
         services.AddTransient<IGetAllCandidatesWithSavedSearchesHandler, GetAllCandidatesWithSavedSearchesHandler>();
