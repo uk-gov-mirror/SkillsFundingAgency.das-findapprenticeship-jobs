@@ -355,3 +355,5 @@ SFA.DAS.FindApprenticeship.Jobs/.idea/.idea.SFA.DAS.FindApprenticeship.Jobs/.ide
 *.subscription
 
 src/.idea/.idea.SFA.DAS.FindApprenticeship.Jobs/.idea/
+
+.idea/
