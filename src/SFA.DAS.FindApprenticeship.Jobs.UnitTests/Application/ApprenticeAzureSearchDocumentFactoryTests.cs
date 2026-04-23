@@ -1,5 +1,4 @@
-﻿using AutoFixture.NUnit4;
-using FluentAssertions.Execution;
+﻿using FluentAssertions.Execution;
 using SFA.DAS.Encoding;
 using SFA.DAS.FindApprenticeship.Jobs.Application;
 using SFA.DAS.FindApprenticeship.Jobs.Domain.Documents;

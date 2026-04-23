@@ -1,14 +1,9 @@
-﻿using AutoFixture.NUnit4;
-using FluentAssertions;
-using FluentAssertions.Execution;
-using Moq;
-using NUnit.Framework;
+﻿using FluentAssertions.Execution;
 using SFA.DAS.FindApprenticeship.Jobs.Application.Services;
 using SFA.DAS.FindApprenticeship.Jobs.Domain.Interfaces;
 using SFA.DAS.FindApprenticeship.Jobs.Infrastructure.Alerting;
 using SFA.DAS.FindApprenticeship.Jobs.Infrastructure.Api.Requests;
 using SFA.DAS.FindApprenticeship.Jobs.Infrastructure.Api.Responses;
-using SFA.DAS.Testing.AutoFixture;
 
 namespace SFA.DAS.FindApprenticeship.Jobs.UnitTests.Application.Services.RecruitServiceTests;
 public class WhenGettingLiveVacancies

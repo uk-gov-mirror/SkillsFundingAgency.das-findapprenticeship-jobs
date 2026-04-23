@@ -1,6 +1,3 @@
-using AutoFixture.NUnit4;
-using FluentAssertions;
-using NUnit.Framework;
 using SFA.DAS.FindApprenticeship.Jobs.Domain.SavedSearches;
 using SFA.DAS.FindApprenticeship.Jobs.Infrastructure.Api.Responses;
 

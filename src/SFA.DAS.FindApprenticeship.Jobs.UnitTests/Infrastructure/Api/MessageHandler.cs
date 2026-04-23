@@ -1,5 +1,4 @@
 ﻿using Moq.Protected;
-using Moq;
 
 namespace SFA.DAS.FindApprenticeship.Jobs.UnitTests.Infrastructure.Api;
 public static class MessageHandler

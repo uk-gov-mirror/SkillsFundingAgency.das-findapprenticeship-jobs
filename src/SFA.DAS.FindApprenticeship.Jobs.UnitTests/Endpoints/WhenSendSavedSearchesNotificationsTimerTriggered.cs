@@ -1,15 +1,8 @@
 ﻿using System.Text.Json;
-using AutoFixture.NUnit4;
-using FluentAssertions;
-using Microsoft.Azure.Functions.Worker;
-using Microsoft.Extensions.Logging;
-using Moq;
-using NUnit.Framework;
 using SFA.DAS.FindApprenticeship.Jobs.Domain.Handlers;
 using SFA.DAS.FindApprenticeship.Jobs.Domain.SavedSearches;
 using SFA.DAS.FindApprenticeship.Jobs.Endpoints;
 using SFA.DAS.FindApprenticeship.Jobs.Infrastructure.Api.Models;
-using SFA.DAS.Testing.AutoFixture;
 
 namespace SFA.DAS.FindApprenticeship.Jobs.UnitTests.Endpoints
 {

@@ -1,10 +1,6 @@
-﻿using AutoFixture.NUnit4;
-using Esfa.Recruit.Vacancies.Client.Domain.Events;
-using Moq;
-using NUnit.Framework;
+﻿using Esfa.Recruit.Vacancies.Client.Domain.Events;
 using SFA.DAS.FindApprenticeship.Jobs.Domain.Handlers;
 using SFA.DAS.FindApprenticeship.Jobs.Endpoints;
-using SFA.DAS.Testing.AutoFixture;
 
 namespace SFA.DAS.FindApprenticeship.Jobs.UnitTests.Endpoints;
 public class WhenVacancyUpdatedEventTriggered

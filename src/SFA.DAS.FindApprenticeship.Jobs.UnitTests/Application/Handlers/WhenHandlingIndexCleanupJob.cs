@@ -1,5 +1,4 @@
-﻿using AutoFixture.NUnit4;
-using Azure.Search.Documents.Indexes.Models;
+﻿using Azure.Search.Documents.Indexes.Models;
 using SFA.DAS.FindApprenticeship.Jobs.Application.Handlers;
 using SFA.DAS.FindApprenticeship.Jobs.Domain;
 using SFA.DAS.FindApprenticeship.Jobs.Domain.Interfaces;

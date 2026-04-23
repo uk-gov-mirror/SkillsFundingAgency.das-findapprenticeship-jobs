@@ -1,13 +1,7 @@
-using System.Net;
-using AutoFixture.NUnit4;
-using FluentAssertions;
-using Moq;
-using NUnit.Framework;
 using SFA.DAS.FindApprenticeship.Jobs.Application.Services;
 using SFA.DAS.FindApprenticeship.Jobs.Domain.Interfaces;
 using SFA.DAS.FindApprenticeship.Jobs.Infrastructure.Api.Requests;
 using SFA.DAS.FindApprenticeship.Jobs.Infrastructure.Api.Responses;
-using SFA.DAS.Testing.AutoFixture;
 
 namespace SFA.DAS.FindApprenticeship.Jobs.UnitTests.Services.FindApprenticeshipJobsServiceTests;
 

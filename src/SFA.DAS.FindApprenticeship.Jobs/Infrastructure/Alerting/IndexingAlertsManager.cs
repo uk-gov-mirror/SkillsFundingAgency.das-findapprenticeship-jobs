@@ -1,5 +1,4 @@
-﻿using Microsoft.Extensions.Options;
-using SFA.DAS.FindApprenticeship.Jobs.Application.Services;
+﻿using SFA.DAS.FindApprenticeship.Jobs.Application.Services;
 using SFA.DAS.FindApprenticeship.Jobs.Domain.Configuration;
 
 namespace SFA.DAS.FindApprenticeship.Jobs.Infrastructure.Alerting;
